@@ -1,0 +1,150 @@
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+body{
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/image-arriere-plan/groupe-afro-americains-travaillant-ensemble.jpg");
+    margin:auto;
+    
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #fff;
+    background-color: #0a0a23;
+    border-bottom: 4px solid #fdb347;
+    height: auto;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    
+}
+h1{
+    margin:10px 0;
+    font-size: 16px;
+}
+
+nav{
+    margin-top: auto;
+    margin-right: 5px;
+   
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+li{
+    margin: 0 10px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+a:hover{
+    border-bottom: 1px solid #fdb347 ;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 16;
+    padding: 20px 10px ;
+    max-width: 1500px;
+    
+}
+.gallery article{
+    max-width: 300px;
+    margin: 10px;
+    padding: 15px;
+   background-color: #F0F0F2;
+    height: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888; 
+    font-size: 12px;
+   
+   
+}
+.gallery article>img{
+     
+        width: 100%;
+        max-width: 300px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 30px;
+      
+}
+.profil{
+    width: auto;
+    padding: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.titre{
+    font-size: 15px;
+    font-weight: bold;
+   
+    margin: 20px;
+    
+}
+.Description{
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+.solde{
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+footer{
+    
+    bottom: 0;
+    background-color: #0a0a23;
+    padding: 20px 10px;
+    border-top:4px solid #fdb347;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+
+    
+}
+footer div{
+    display: flex;
+    padding: auto;
+    justify-content: space-between;
+    
+}
+footer div>p{
+    color: #fdb347;
+}
+footer div>p:hover{
+    color: #F00020;
+}
+footer nav a{
+    font-weight: bold ;
+}
+footer nav a:hover{
+    color: #fdb347;
+}

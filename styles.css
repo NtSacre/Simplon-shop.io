@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #ccc;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #fff;
+    background-color: #0a0a23;
+    border-bottom: 4px solid #fdb347;
+    height: 80px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    
+}
+h1{
+    margin:10px 0;
+}
+nav{
+    margin-top: auto;
+   
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+li{
+    margin: 0 10px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+a:hover{
+    border-bottom: 1px solid #fdb347 ;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 16;
+    padding: 20px 10px ;
+    max-width: 1500px;
+    margin: 20px 20px ;
+}
+.gallery article{
+    max-width: 350px;
+    margin: 10px;
+    padding: 15px;
+   background-color: #F0F0F2;
+    height: 500px;
+    max-height: 510px;
+    border-radius: 10px;
+   
+   
+}
+.gallery article>img{
+     
+        width: 100%;
+        max-width: 350px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+      
+}
+.titre{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    
+}
+.Description{
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+.solde{
+    font-weight: bold;
+    margin: 10px 0;
+}
+.gallery article a {
+    text-align: center;
+    background-color: #fdb347;
+    border-radius: 16px;
+    width: 30px;
+    padding: 15px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.gallery article a:hover{
+    background-color: #F00020;
+}
+
+.marquee-container{
+    overflow: hidden;
+    background-color: #F0F0F2 ;
+    padding: 5px 0;
+     box-shadow: 2px 2px 5px #888888; ;
+}
+.marquee-text{
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+    font-size: 25px;
+    font-weight: bold;
+}
+@keyframes marquee {
+    0%{
+        transform: translateX(350%);
+    }
+    100%{
+        transform: translateY(-0%);
+    }
+}
+footer{
+    background-color: #0a0a23;
+    padding: 20px 10px;
+    border-top:4px solid #fdb347;
+    margin: 5px 0 0 0;
+    
+}
+footer div{
+    display: flex;
+    padding: auto;
+    justify-content: space-between;
+
+}
+footer div>p{
+    color: #fdb347;
+}
+footer div>p:hover{
+    color: #F00020;
+}
+footer nav a{
+    font-weight: bold ;
+}
+footer nav a:hover{
+    color: #fdb347;
+}
+.body-class{
+    width: auto;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/image-arriere-plan/groupe-afro-americains-travaillant-ensemble.jpg");
+}
